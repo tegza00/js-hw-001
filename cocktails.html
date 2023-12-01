@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Recipes</title>
+    <script src="./cocktails.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+</head>
+<body>
+<div id="cocktailList"></div>
+
+<script id="cocktail-template" type="text/x-handlebars-template">
+    <div style="text-align: center;">
+        <div style="position: relative;">
+            <img src="{{strDrinkThumb}}" alt="{{strDrink}}" style="height: auto;">
+            <p style="position: absolute; bottom: 5px; left: 595px; width: 37%; background-color: rgba(0, 0, 0, 0.7); margin: 0; color: rgb(255, 255, 255); font-size: 32px;">{{strDrink}}</p>
+        </div>
+    </div>
+</script>
+</body>
+</html>
